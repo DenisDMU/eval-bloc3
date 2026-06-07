@@ -1,0 +1,44 @@
+{
+	"name": "kanban-board",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"test:unit": "vitest run unit.test.tsx --environment jsdom",
+		"test:integration": "vitest run integration.test.tsx --environment jsdom",
+		"test:coverage": "vitest run --coverage --environment jsdom"
+	},
+	"//": "Student Exercise: The 'lodash' dependency below is vulnerable and not used. Remove it to pass the SCA scan.",
+	"dependencies": {
+		"lodash": "4.17.4",
+		"@dnd-kit/core": "^6.1.0",
+		"@dnd-kit/sortable": "^8.0.0",
+		"@dnd-kit/utilities": "^3.2.2",
+		"lucide-react": "^0.344.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"uuid": "^14.0.0"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^6.4.2",
+		"@testing-library/react": "^14.2.1",
+		"@types/react": "^18.2.56",
+		"@types/react-dom": "^18.2.19",
+		"@types/uuid": "^11.0.0",
+		"@typescript-eslint/eslint-plugin": "^7.0.2",
+		"@typescript-eslint/parser": "^7.0.2",
+		"@vitejs/plugin-react": "^6.0.2",
+		"@vitest/coverage-v8": "^4.1.8",
+		"eslint": "^8.56.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.5",
+		"jsdom": "^24.0.0",
+		"typescript": "~5.5.4",
+		"vite": "^8.0.16",
+		"vitest": "^4.1.8"
+	}
+}
