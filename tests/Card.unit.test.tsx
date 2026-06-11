@@ -27,7 +27,7 @@ vi.mock('@dnd-kit/sortable', async (importOriginal) => {
 });
 
 test('renders card content and ID', () => {
-  /*render(<Card task={mockTask} />);
+  render(<Card task={mockTask} />);
   expect(screen.getByText('Test Card Content')).toBeInTheDocument();
   expect(screen.getByText(/ID: test-/i)).toBeInTheDocument();
 });
@@ -43,6 +43,6 @@ test('renders dragging state correctly', () => {
   } as unknown as ReturnType<typeof sortable.useSortable>);
   
   const { container } = render(<Card task={mockTask} />);
-  expect(container.firstChild).toHaveClass('card-dragging');*/
+  expect(container.firstChild).toHaveClass('card-dragging');
   expect(1).toBe(1);
 });

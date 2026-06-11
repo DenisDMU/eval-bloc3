@@ -22,7 +22,6 @@ export default function Card({ task }: Props) {
     },
   });
 
-  const randomVariable = 2;
 
   const style = {
     transition,
