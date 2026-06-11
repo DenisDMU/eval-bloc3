@@ -18,5 +18,5 @@ test('renders column title and tasks', () => {
   
   expect(screen.getByText('To Do')).toBeInTheDocument();
   expect(screen.getByText('Task 1')).toBeInTheDocument();
-  expect(screen.getByText('Task 2*')).toBeInTheDocument();
+  expect(screen.getByText('Task 2')).toBeInTheDocument();
 });
